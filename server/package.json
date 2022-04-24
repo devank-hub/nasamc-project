@@ -1,0 +1,36 @@
+{
+  "name": "nasa-project-api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Nasa project using node RESTapi and React Frontend",
+  "main": "server.js",
+  "jest": {
+    "testEnvironment": "jest-environment-node",
+    "transform": {}
+  },
+  "scripts": {
+    "watch": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test-watch": "jest --watch",
+    "cluster": "pm2 start src/server.js -i max"
+  },
+  "keywords": [],
+  "author": "Ank",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.0.4",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.10",
+    "nasa-project": "file:..",
+    "pm2": "^5.2.0"
+  }
+}

@@ -22,7 +22,7 @@ RUN npm run install-server --only=production
 COPY client/ client/
 # copying the client folder from host to container client folder
 RUN npm run build --prefix client
-# building the client
+# building the client production files
 # before above one to execute ,for building the client we need to change 
 # this "set BUILD_PATH=../server/public&& react-scripts build" to "BUILD_PATH=../server/public react-scripts build" in client folder
 # above only valid for linux images and not for windows images

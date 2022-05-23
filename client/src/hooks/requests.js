@@ -28,7 +28,6 @@ async function httpSubmitLaunch(launch) {
       ok: false,
     }
   }
-  
 }
 
 async function httpAbortLaunch(id) {
